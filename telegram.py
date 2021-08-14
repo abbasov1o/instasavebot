@@ -3,6 +3,9 @@ from time import gmtime, strftime
 from private import Client
 from instalooter.looters import PostLooter
 
+import os
+from config import Config
+
 bot = Client(
     'INSTA',
     bot_token = Config.BOT_TOKEN
