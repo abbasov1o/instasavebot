@@ -1,6 +1,6 @@
 import telebot
 from time import gmtime, strftime
-from private import teletoken
+from private import Client
 from instalooter.looters import PostLooter
 
 bot = Client(
