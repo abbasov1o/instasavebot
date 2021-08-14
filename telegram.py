@@ -3,8 +3,10 @@ from time import gmtime, strftime
 from private import teletoken
 from instalooter.looters import PostLooter
 
-bot = telebot.TeleBot(teletoken)
-
+bot = Client(
+    'INSTA',
+    bot_token = Config.BOT_TOKEN
+)
 
 def log(time, message):
     log_print(time, message.from_user.username, message.chat.id, message.text)
